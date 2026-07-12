@@ -1,0 +1,43 @@
+__pycache__/
+*.py[cod]
+
+# Python environments and build artifacts
+.venv/
+.venv*/
+dist/
+build/
+*.egg-info/
+
+# Python tooling caches and reports
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Pywrangler-generated dependencies and lock file
+python_modules/
+pylock.toml
+
+# Cloudflare Wrangler local state
+.wrangler/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+
+# Editors and operating systems
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

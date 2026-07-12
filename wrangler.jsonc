@@ -1,0 +1,7 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "biased-uuid",
+  "main": "src/entry.py",
+  "compatibility_date": "2026-07-12",
+  "compatibility_flags": ["python_workers"]
+}

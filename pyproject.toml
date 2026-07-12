@@ -1,0 +1,11 @@
+[project]
+name = "biased-uuid"
+version = "0.1.0"
+description = "A deliberately biased UUIDv4 Cloudflare Worker"
+requires-python = ">=3.12"
+dependencies = ["workers-runtime-sdk"]
+
+[dependency-groups]
+dev = [
+    "workers-py>=1.15.0",
+]

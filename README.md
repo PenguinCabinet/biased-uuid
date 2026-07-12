@@ -1,0 +1,46 @@
+# biased-uuid
+
+線形合同法 (LCG) の出力から、意図的に偏った RFC 9562 UUIDv4 を返すCloudflare Worker です。暗号学的に安全ではなく、実用の識別子には使えません。
+
+## Usage
+### 16bit×8の線形合同法
+16bitの線形合同法×8で作ったUUIDを取得できます。
+```
+curl biased-uuid.penguincabinet.workers.dev
+```
+```
+curl biased-uuid.penguincabinet.workers.dev/16
+```
+[もしくは直接アクセス](biased-uuid.penguincabinet.workers.dev/16)
+### 32bit×4の線形合同法
+16bitの線形合同法×8で作ったUUIDを取得できます。
+```
+curl biased-uuid.penguincabinet.workers.dev/32
+```
+[もしくは直接アクセス](biased-uuid.penguincabinet.workers.dev/32)
+
+
+## dev
+
+```sh
+uv run pywrangler dev
+curl http://localhost:8787/
+curl http://localhost:8787/16
+curl http://localhost:8787/32
+```
+
+レスポンスは改行付きの UUID です。`GET` と `HEAD` のみを受け付け、キャッシュを禁止します。デプロイは次のコマンドです。
+
+```sh
+uv run pywrangler deploy
+```
+
+テスト:
+
+```sh
+python -m unittest discover -s tests
+```
+
+`/` と `/16` は8個の16ビット LCG 出力を連結して生成します。`/32` は4個の32ビット LCG 出力を連結して生成します。存在しないパスには404を返します。
+
+Python の `uuid.UUID(..., version=4)` で versionを4、variantをRFC準拠に強制しているため、正しい形式のUUIDv4になります。
