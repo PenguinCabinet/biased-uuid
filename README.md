@@ -9,7 +9,7 @@
 ```
 curl biased-uuid.penguincabinet.workers.dev/8
 ```
-[もしくは直接アクセス](biased-uuid.penguincabinet.workers.dev/8)
+[もしくは直接アクセス](https://biased-uuid.penguincabinet.workers.dev/8)
 ### 16bitの線形合同法×8
 16bitの線形合同法×8で作ったUUIDを取得できます。
 ```
