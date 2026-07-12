@@ -4,13 +4,13 @@
 
 ## Usage
 
-### 8bit×16の線形合同法
+### 8bitの線形合同法×16
 8bitの線形合同法×16で作ったUUIDを取得できます。
 ```
 curl biased-uuid.penguincabinet.workers.dev/8
 ```
 [もしくは直接アクセス](biased-uuid.penguincabinet.workers.dev/8)
-### 16bit×8の線形合同法
+### 16bitの線形合同法×8
 16bitの線形合同法×8で作ったUUIDを取得できます。
 ```
 curl biased-uuid.penguincabinet.workers.dev
@@ -19,7 +19,7 @@ curl biased-uuid.penguincabinet.workers.dev
 curl biased-uuid.penguincabinet.workers.dev/16
 ```
 [もしくは直接アクセス](https://biased-uuid.penguincabinet.workers.dev/16)
-### 32bit×4の線形合同法
+### 32bitの線形合同法×4
 32bitの線形合同法×4で作ったUUIDを取得できます。
 ```
 curl biased-uuid.penguincabinet.workers.dev/32
