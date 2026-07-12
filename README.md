@@ -11,13 +11,13 @@ curl biased-uuid.penguincabinet.workers.dev
 ```
 curl biased-uuid.penguincabinet.workers.dev/16
 ```
-[もしくは直接アクセス](biased-uuid.penguincabinet.workers.dev/16)
+[もしくは直接アクセス](https://biased-uuid.penguincabinet.workers.dev/16)
 ### 32bit×4の線形合同法
 32bitの線形合同法×4で作ったUUIDを取得できます。
 ```
 curl biased-uuid.penguincabinet.workers.dev/32
 ```
-[もしくは直接アクセス](biased-uuid.penguincabinet.workers.dev/32)
+[もしくは直接アクセス](https://biased-uuid.penguincabinet.workers.dev/32)
 
 
 ## dev
