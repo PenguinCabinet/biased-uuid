@@ -1,6 +1,6 @@
 # biased-uuid
 
-線形合同法 (LCG) の出力から、意図的に偏った RFC 9562 UUIDv4 を返すCloudflare Worker です。暗号学的に安全ではなく、実用の識別子には使えません。
+線形合同法 (LCG) の出力から、意図的に偏った RFC 9562 UUIDv4 を返すCloudflare Worker です。偏ったUUIDが欲しい時にお使いください。暗号学的に安全ではなく、実用の識別子には使えません。
 
 ## Usage
 
