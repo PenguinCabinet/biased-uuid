@@ -1,4 +1,5 @@
 # biased-uuid
+<img width="960" height="516" alt="スクリーンショット 2026-07-12 170131" src="https://github.com/user-attachments/assets/6c53df82-370e-4e16-9008-5376573ba4ca" />
 
 線形合同法 (LCG) の出力から、意図的に偏った RFC 9562 UUIDv4 を返すCloudflare Worker です。偏ったUUIDが欲しい時にお使いください。暗号学的に安全ではなく、実用の識別子には使えません。
 
